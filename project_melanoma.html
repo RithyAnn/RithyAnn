@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Computer Aided Melanoma Diagnosis Using Interpretable Deep Model</h2>
+        <div class="container">
+
+            <p>
+                This is my master's graduation project. It aims to design an interpretable model to detect melanoma. The model borrows the design ideas of autoencoder and prototype network. While the classification working, it realizes the self-explanation of the model independently of the results through feature reconstruction and distance calculation.
+                <br>
+                This is a brave exploration in solving the black box problem, a major difficulty facing the field of machine learning today.
+            </p>
+            <div class="container">
+                    <img class="image" src="autoencoder_net.png" style="width: 65%; height: auto;"/>
+            </div>
+            <div class="container">
+                <img class="image" src="prototype_net.png" style="width: 65%; height: auto;"/>
+            </div>
+            <div class="container">
+                <p>               
+                </p>
+            </div>
+            <p>
+                The model contains two key parts: an autoencoder network and a prototype network.
+                <br>
+                The autoencoder is used for feature extraction and vector reconstruction. The prototype network is used for classification purposes.
+            </p>
+            <div class="container">
+                <img class="image" src="reconstruction_image_192.png" style="width: 65%; height: auto;"/>
+            </div>
+            <p>
+                The reconstructed images can be used as pixel-space representations of the feature vectors extracted from the individual inputs within the latent space. They act as visual cues that reflect the essential features extracted by the encoder, thus facilitating in-depth analysis of important features and the overall performance of the network. Through these reconstructed images, one can gain insight into the complexity of the feature extraction and reconstruction process, thus helping to understand the underlying mechanisms of the model's functionality.
+            </p>
+            <div class="container">
+                <img class="image" src="prototype_img.jpg" style="width: 65%; height: auto;"/>
+            </div>
+            <p>
+                A prototype image is a visual representation that captures the distribution and clustering of input features in pixel space, where each prototype image corresponds to a different class. These prototype images effectively showcase the features in samples that belong to a particular class. They provide an intuitive understanding of the unique characteristics of each class by visualizing the distribution and clustering of input features in pixel space. They play a vital role in example-based explanations, helping to explain classification decisions by comparing the similarities between input and prototype images.
+            </p>
+            <div class="container">
+                <img class="image" src="confuse_aug.png" style="width: 65%; height: auto;"/>
+            </div>
+            <p>
+                Confuse Matrix on Test Set
+            </p>
+            <!-- End of One Project Block -->
+
+        </div>
+    </div>
+
+</body>>
+</html>
